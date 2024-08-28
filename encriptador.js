@@ -72,7 +72,7 @@ document.getElementById('copiarBtn').addEventListener('click', function() {
     if (texto) {
         navigator.clipboard.writeText(texto)
             .then(() => {
-                alert('Texto copiado al portapapeles!');
+                alert('Se copió el texto!');
             })
             .catch(err => {
                 console.error('Error al copiar el texto: ', err);
