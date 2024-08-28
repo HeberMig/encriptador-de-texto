@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img src="/Images/Logo-Alura.png" alt="logo alura">
+    </header>
+    <main>
+        <form class="form-section">
+            <textarea 
+                class="form-input" 
+                name="mensaje" 
+                id="texto" 
+                cols="30" 
+                rows="10" 
+                placeholder="Ingrese el texto aquí"
+                required
+            ></textarea>
+            <button 
+                id="reset" 
+                class="form-btn-secundario" 
+                type="button">Vacíar
+            </button>
+            <button 
+            id="pegar" 
+            class="form-btn-secundario" 
+            type="button">Pegar
+           </button>
+            <div class="aviso-container">
+                <div class="aviso-inf">
+                    <img src="./Images/Aviso-inf.svg" alt="aviso icono">
+                    <span>Solo letras minúsculas y sin acentos</span>
+                </div>
+            </div>
+            <div class="button-container">
+                <input 
+                    class="form-btn" 
+                    type="button" 
+                    value="Encriptar" 
+                    id="encriptarBtn"/>
+                <input 
+                    class="form-btn-secundario" 
+                    type="button" 
+                    value="Desencriptar" 
+                    id="desencriptarBtn"/>
+            </div>
+        </form> 
+        <aside class="resultado">
+            <img src="./Images/Persona-alura.svg" alt="Persona" class="resultado_imagen"/>
+            <div id="carga" class="loader hidden"></div>
+            <div class="resultado-container">
+                <h3 class="resultado-titulo">Ningún mensaje fue encontrado</h3>
+                <p id="resultado-texto" class="resultado-texto">
+                    Ingresa el texto que deseas encriptar o desencriptar.
+                </p>
+                <button id="copiarBtn" class="form-btn-secundario">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    <script src="encriptador.js"></script>
+</body>
+
+</html>
